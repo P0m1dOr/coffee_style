@@ -21,3 +21,9 @@ nav {
     position: fixed;
     margin: 30px 25px;
 }
+
+[class*="-title"] {
+    text-transform: uppercase;
+    color: red;
+    text-align: center;
+}
