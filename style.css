@@ -24,6 +24,6 @@ nav {
 
 [class*="-title"] {
     text-transform: uppercase;
-    color: red;
+    color: #1d1f2e;
     text-align: center;
 }
