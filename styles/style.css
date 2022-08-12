@@ -118,6 +118,26 @@ nav li a:hover {
     text-transform: uppercase;
     color: #1d1f2e;
     text-align: center;
+    margin:0 15px;
+    line-height:18px;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    text-align:center;
+    margin-bottom: 100px;
+    position:relative;
+    opacity: 0.6;
+}
+[class*="-title"]::before{
+    content:"";
+    position:absolute;
+    width:30px;
+    height:1px;
+    background-color:#ececed;
+    color:#ececed;
+    top:8px;
+    left: 350px;
 }
 
 .content-wrap {
