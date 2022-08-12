@@ -120,6 +120,7 @@ nav li a:hover {
     text-align: center;
 }
 
+
 .content-wrap {
     margin: 0 141px 100px;
 }
@@ -152,5 +153,58 @@ nav li a:hover {
 .our_story div div a:hover{
     border-bottom: 2px solid rgba(162, 95, 75, 0.8);
     color: rgba(29, 31, 46, 0.8);
+}
+
+
+
+/*header section*/
+
+
+.header-background {
+    background: url(../img/header-background.jpg) #000 no-repeat;
+    background-size: auto, cover;
+    background-position: -200px -530px;
+    text-align: center;
+    color: #fff;
+    max-width: 1440px;
+    min-height: 530px;
+    min-width: 880px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.header-first-text {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.header-second-text {
+    font-size: 48px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.header-third-text {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.explore-button {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    color: #1d1f2e;
+    padding: 18px 24px;
+    background-color: #fff;
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
 
 }
