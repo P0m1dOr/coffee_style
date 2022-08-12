@@ -321,7 +321,7 @@ nav li a:hover {
     text-align:center;
     margin-top: 35px;
 }
-
+/*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 [class*="-big"] .visuallyhidden{
     position:absolute;
     top: 385px;
@@ -356,6 +356,55 @@ nav li a:hover {
     z-index:1;
 }
 [class*="-big"]:hover .overlay{
+    opacity:0.2;
+    transition: background-color 400ms ease, opacity 400ms ease, box-shadow 400ms ease;
+}
+/****************************************************************/
+/*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.line-1,.line-2,.line-3{
+    display: flex;
+    flex-direction:row;
+    margin-bottom:50px;
+    column-gap: 20px;
+    position:relative;
+}
+[class*="common"] img{
+    width:300px;
+    height: auto;
+}
+[class*="-common"] .visuallyhidden{
+    position:absolute;
+    top: 230px;
+    left:15px;
+    padding-top:14px;
+    padding-bottom: 14px;
+   width: 270px;
+    background-color:#fff;
+    text-align:center;
+    text-decoration: none;
+    color:#1d1f2e;
+    transition: background-color 400ms ease, opacity 400ms ease, box-shadow 400ms ease;
+    box-shadow: 0 2px 6px 0 rgb(29 31 46 / 10%);
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform:uppercase;
+    opacity: 0;
+    z-index:50;
+}
+[class*="-common"]:hover .visuallyhidden{
+    opacity:1;
+}
+[class*="-common"] .overlay{
+    opacity:0;
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 300px;
+    background-color:#1d1f2e;
+    z-index:1;
+}
+[class*="-common"]:hover .overlay{
     opacity:0.2;
     transition: background-color 400ms ease, opacity 400ms ease, box-shadow 400ms ease;
 }
