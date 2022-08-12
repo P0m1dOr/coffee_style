@@ -118,26 +118,38 @@ nav li a:hover {
     text-transform: uppercase;
     color: #1d1f2e;
     text-align: center;
-    margin:0 15px;
-    line-height:18px;
-    font-size:12px;
-    font-weight:700;
-    letter-spacing:2px;
-    text-transform:uppercase;
-    text-align:center;
+    margin: 0 15px;
+    line-height: 18px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
     margin-bottom: 100px;
-    position:relative;
+    position: relative;
     opacity: 0.6;
 }
-[class*="-title"]::before{
-    content:"";
-    position:absolute;
-    width:30px;
-    height:1px;
-    background-color:#ececed;
-    color:#ececed;
-    top:8px;
+
+[class*="-title"]::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 1px;
+    background-color: #c5c5c9;
+    color: #ececed;
+    top: 8px;
     left: 350px;
+}
+[class*="-title"]::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 1px;
+    background-color: #c5c5c9;
+    color: #ececed;
+    top: 8px;
+    left: 530px;
+    opacity:1;
 }
 
 
@@ -163,14 +175,15 @@ nav li a:hover {
 }
 
 .our_story div div a {
-    color:#a25f4b;  
+    color: #a25f4b;
     text-decoration: none;
     border-bottom: 2px solid rgba(162, 95, 75, 0.2);
     margin-top: 10px;
     padding-bottom: 3px;
     transition: color 400ms ease, border-color 400ms ease;
 }
-.our_story div div a:hover{
+
+.our_story div div a:hover {
     border-bottom: 2px solid rgba(162, 95, 75, 0.8);
     color: rgba(29, 31, 46, 0.8);
 }
@@ -182,8 +195,8 @@ nav li a:hover {
 
 .header-background {
     background: url(../img/header-background.jpg) #000 no-repeat;
-    background-size: auto, cover;
-    background-position: -200px -530px;
+    background-size: auto,contain;
+    background-position: 50% 100%;
     text-align: center;
     color: #fff;
     max-width: 1440px;
@@ -227,4 +240,106 @@ nav li a:hover {
     height: auto;
     box-sizing: border-box;
 
+}
+/*================================================================*/
+/*featured mugs*/
+.feature-mugs div .flex-wrapper{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 660px;
+    column-gap:20px;
+    align-content: center;
+}
+[class*="-big"] img{
+    width:460px;
+    height:auto;
+}
+[class*="mug--standard"]{
+    display:flex;
+    flex-direction:column;   
+    position:relative;
+}
+[class*="mug--standard"] .flex-wrapper
+[class*="mug--standard"] img{
+    margin-bottom: 25px;
+}
+
+
+
+[class*="mug--standard"] div .cost-standard{
+    text-align:center;
+    color:rgba(29, 31, 46, 0.7);
+    margin-bottom: 15px;
+   
+}
+[class*="mug--standard"] div{
+    text-align:center;
+}
+
+[class*="mug--onsale"] div{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+[class*="mug--onsale"] div .cost-standard{
+    text-align: center;
+    text-decoration:line-through;
+    margin-bottom:15px;
+    color:rgba(29, 31, 46, 0.4);
+}
+[class*="mug--onsale"] div .cost-sale{
+    margin:0 10px 15px 0;
+    color:#a25f4b;
+    font-size:20px;
+    line-height: 32px;
+}
+[class*="mug--onsale"]{
+    display: flex;
+    flex-direction: column;
+    position:relative;
+}
+[class*="mug--onsale"] .mug-sale{
+    position:absolute;
+    top: 10px;
+    right: 10px;
+    padding:6px 15px;
+    width:62px;
+    height:28px;
+    background:white;
+    color:#a25f4b;
+    font-weight: 700;
+}
+.mug-subtext{
+    margin-top:10px;
+    margin-bottom: 5px;
+    color:#1d1f2e;
+    font-size:20px;
+    line-height: 30px;
+    font-weight: 400;
+    text-align:center;
+    margin-top: 35px;
+}
+
+[class*="-big"] .visuallyhidden{
+    position:absolute;
+    top: 385px;
+    left:15px;
+    padding-top:18px;
+    padding-bottom: 18px;
+   width:428px;
+    background-color:#fff;
+    text-align:center;
+    text-decoration: none;
+    color:#1d1f2e;
+    transition: background-color 400ms ease, opacity 400ms ease, box-shadow 400ms ease;
+    box-shadow: 0 2px 6px 0 rgb(29 31 46 / 10%);
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform:uppercase;
+    display:none;
+}
+[class*="-big"] .visuallyhidden:hover{
+    display: block;
+    
 }
