@@ -502,32 +502,43 @@ nav li a:hover {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    margin-bottom: 100px;
 }
 
 .lifestyle-item {
     width: 300px;
+    margin-bottom: 50px;
 }
 
-.lifestyle-item a {
+.lifestyle-image {
     display: block;
     width: 300px;
     height: 300px;
     position: relative;
+    margin-bottom: 30px;
 }
 
 .lifestyle-button {
     display: inline-block;
     position: absolute;
     opacity: 0;
-    width: 260px;
     right: 0;
     left: 0;
+    bottom: 0;
     background-color: #fff;
     padding: 18px 24px;
+    margin: 0 20px 20px 20px ;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
 }
 
-.lifestyle-item a:hover .lifestyle-button {
+.lifestyle-image:hover .lifestyle-button {
     opacity: 1;
+    transition: 0.3s linear;
 }
 
 .mask {
@@ -539,7 +550,7 @@ nav li a:hover {
     opacity: 0; 
 }
 
-.lifestyle-item a:hover .mask {
+.lifestyle-image:hover .mask {
     opacity: 0.5;
     transition: 0.4s linear;
 }
@@ -557,4 +568,21 @@ nav li a:hover {
 .third-block-story {
     background: url(../img/life_stories_3.jpg) no-repeat -125px 0px;
     background-size: cover;
+}
+
+.lifestyle-subtitle {
+    font-size: 20px;
+    color: #1d1f2e;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.date {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #1d1f2e;
+    font-size: 12px;
+    letter-spacing: 2px;
+    opacity: 0.6;
 }
