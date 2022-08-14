@@ -39,7 +39,7 @@ nav ul .active {
 
 .cart {
     display: flex;
-    flex-direction: row;
+    flex-direction: row;    
     align-items: center;
     padding: 4px 0;
     margin: 0;
@@ -84,7 +84,9 @@ nav li {
 nav ul {
     list-style-type: none;
     display: flex;
+    align-self: center;
     flex-direction: row;
+    margin: 0;
 }
 
 
@@ -96,7 +98,7 @@ nav li a {
     font-weight: 700;
     cursor: pointer;
     text-decoration: none;
-    margin-top: 2px;
+    margin-top: 5px;
     margin-bottom: 2px;
     color: #1d1f2e;
     opacity: 0.7;
