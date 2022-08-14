@@ -244,6 +244,7 @@ nav li a:hover {
     letter-spacing: 2px;
 
 }
+
 /*================================================================*/
 /*featured mugs*/
 .feature-mugs div .flex-wrapper{
@@ -635,12 +636,18 @@ nav li a:hover {
 }
 
 .subscribe-button {
+    
     padding: 18px 24px;
     background-color: #fff;
     letter-spacing: 2px;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 12px;
+    cursor:pointer;
+    
+}
+.subscribe-button:hover{
+    opacity:0.99;
 }
 
 
@@ -665,6 +672,12 @@ ul {
     margin: 0;
     display: block;
     text-align: left;
+}
+.footer-colunm li a  {
+    transition: color 400ms ease;
+}
+.footer-column li a:hover{
+    color: #a25f4b;
 }
 
 .first-col-flex {
