@@ -231,14 +231,15 @@ nav li a:hover {
     display: inline-block;
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 12px;
+    font-weight: 700;
     color: #1d1f2e;
     padding: 18px 24px;
     background-color: #fff;
     max-width: 100%;
     height: auto;
     box-sizing: border-box;
+    letter-spacing: 2px;
 
 }
 /*================================================================*/
