@@ -356,7 +356,7 @@ nav li a:hover {
     z-index:1;
 }
 [class*="-big"]:hover .overlay{
-    opacity:0.1;
+    opacity:0.1temp
     transition: background-color 400ms ease, opacity 400ms ease, box-shadow 400ms ease;
 }
 /****************************************************************/
