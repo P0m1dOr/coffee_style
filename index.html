@@ -11,7 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <sctipt  type="text/javascript"src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></sctipt>
+    <sctipt type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></sctipt>
+    <script type="text/javascript" src="jquery-3.6.1.min.js"></script>
     <script type="text/javascript">
         new WOW().init();
     </script>
@@ -25,12 +26,12 @@
             <nav>
                 <img src="img/logo.png" alt="Coffee Style" style="padding-right:55px;">
                 <ul>
-                    <li><a href="#" class="active">Home</a></li></a></li>
-                    <li><a href="#">our products</a></li>
-                    <li><a href="#">blog</a></li>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">contact</a></li>
-                    <li><a href="#">styleguide</a></li>
+                    <li><a href="#" class="active tab">Home</a></li></a></li>
+                    <li><a href="#" class="tab">our products</a></li>
+                    <li><a href="#" class="tab">blog</a></li>
+                    <li><a href="#" class="tab">about</a></li>
+                    <li><a href="#" class="tab">contact</a></li>
+                    <li><a href="#" class="tab">styleguide</a></li>
                 </ul>
                 <a href="#" class="cart">
                     <img src="img/cart icon.png" style="width:16px; height:20px; margin-right:10px;" alt="cart">
@@ -51,30 +52,36 @@
 
     </header>
     <main>
-        <section class="sidebar-cart">
-            <div class="left-container"></div>
-            <div class="right-container">
-                <div class="sidebar-header">
-                    <p class="your-cart">your cart</p>
-                    <span class="x-logo"></span>
+        <div class="sidebar-wrapper">
+            <section class="sidebar-cart">
+
+                <div class="left-container"></div>
+                <div class="right-container">
+                    <div class="sidebar-header">
+                        <p class="your-cart">your cart</p>
+                        <span class="x-logo"></span>
+                    </div>
+                    <div class="sidebar-main">
+                        <img src="img/cart announcement.png" style="width:30px; height:34px;" class="exclamation-mark">
+                        <p class="text-hightlight">Your Cart is Empty</p>
+                        <p class="sidebar-text" style="text-align:center;">It is a paradisematic country, in which
+                            roasted parts of sentences fly into your mouth. Even the all-powerful.</p>
+                    </div>
                 </div>
-                <div class="sidebar-main">
-                    <img src="img/cart announcement.png" style="width:30px; height:34px;"  class="exclamation-mark">
-                    <p class="text-hightlight">Your Cart is Empty</p>
-                    <p class="sidebar-text" style="text-align:center;">It is a paradisematic country, in which
-                        roasted parts of sentences fly into your mouth. Even the all-powerful.</p>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
         <section class="wow bounceInUp our_story" data-wow-duration="1s" data-wow-offset="5">
             <div class="container" style="text-align: center;">
                 <div class="content-wrap">
                     <h2>Even the all-powerful Pointing has no control about <br> the blind texts.</h1>
-                        <p>It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even
+                        <p>It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                            Even
                             the
-                            all-powerful Pointing has no control about the blind texts it is an almost unorthographic
+                            all-powerful Pointing has no control about the blind texts it is an almost
+                            unorthographic
                             life
-                            One day however a small line of blind text by the name of Lorem Ipsum decided to leave for
+                            One day however a small line of blind text by the name of Lorem Ipsum decided to leave
+                            for
                             the
                             far World of Grammar.</p>
                         <a href="#" style="color: #a25f4b">Read the full Story</a>
@@ -255,7 +262,8 @@
                                 <div class="mask"></div>
                                 <span class="lifestyle-button">read the full story</span>
                             </a>
-                            <a href="#" class="lifestyle-subtitle">Health Check: why do I get a headache when I haven't
+                            <a href="#" class="lifestyle-subtitle">Health Check: why do I get a headache when I
+                                haven't
                                 had my
                                 coffee?</a>
                             <p class="lifestyle-content">It is a paradisematic country, in which roasted parts of
@@ -269,7 +277,8 @@
                                 <span class="lifestyle-button">read the full story</span>
                             </a>
                             <a href="#" class="lifestyle-subtitle">How long does a cup of coffee keep you awake?</a>
-                            <p class="lifestyle-content">It is a paradisematic country, in which roasted parts. Vel qui
+                            <p class="lifestyle-content">It is a paradisematic country, in which roasted parts. Vel
+                                qui
                                 et
                                 ad voluptatem.</p>
                             <span class="date">october 9, 2018</span>
@@ -279,7 +288,8 @@
                                 <div class="mask"></div>
                                 <span class="lifestyle-button">read the full story</span>
                             </a>
-                            <a href="#" class="lifestyle-subtitle">Recent research suggests that heavy coffee drinkers
+                            <a href="#" class="lifestyle-subtitle">Recent research suggests that heavy coffee
+                                drinkers
                                 may reap
                                 health benefits.</a>
                             <p class="lifestyle-content">It is a paradisematic country, in which roasted parts of
@@ -300,7 +310,7 @@
                     <button class="subscribe-button">subscribe</button>>
                 </div>
             </section>
-            
+
     </main>
 
 

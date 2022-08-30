@@ -1,4 +1,4 @@
-var button = document.querySelector('.x-logo');
+/*var button = document.querySelector('.x-logo');
 var sidebar = document.querySelector('.sidebar-cart');
 var cart = document.querySelector(".cart");
 cart.addEventListener('click', function() {
@@ -9,3 +9,13 @@ button.addEventListener('click', function() {
     sidebar.classList.remove("show");
     
 });
+*/
+$(document).ready(function(){
+    $(".x-logo").click(function(){
+      $(".sidebar-wrapper").hide(400);
+    });
+    $(".cart").click(function(){
+        $(".sidebar-wrapper").show(400);
+
+    });
+  });
