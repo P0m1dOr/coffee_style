@@ -897,7 +897,7 @@ ul {
     display: flex;
 }
 
-@media screen and (max-width: 990px) and (min-width:768px) {
+@media screen and (max-width: 990px) /*and (min-width:768px)*/ {
     body{
         overflow-x:hidden;
     }
@@ -967,6 +967,9 @@ ul {
 .lifestyle-inner{
     flex-wrap:wrap;
     justify-content: center;
+}
+.footer-container{
+    margin-left: 20px;
 }
 
 }
