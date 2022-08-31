@@ -264,7 +264,7 @@ nav ul {
 }
 
 [class*="-big"] img {
-    width: 460px;
+    max-width: 460px;
     height: auto;
 }
 
@@ -897,7 +897,10 @@ ul {
     display: flex;
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 990px) and (min-width:768px) {
+    body{
+        overflow-x:hidden;
+    }
     nav {
         padding: 0 20px;
 
@@ -939,7 +942,31 @@ ul {
 
 
     }
-
-
+    .header-background{
+        width:100vw;
+        background-position:center;
+        background-origin:border-box;
+        background-size: cover;
+        min-width:100vw;
+        max-width:100vw;
+    }
+.line-1,.line-2,.line-3{
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content:center;
+}
+[class*="common"] img {
+    max-width: 300px;
+    height: auto;
+}
+.outer-flex{
+    flex-direction:column;
+    align-items:center;
+    row-gap:20px;
+}
+.lifestyle-inner{
+    flex-wrap:wrap;
+    justify-content: center;
+}
 
 }
