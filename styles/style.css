@@ -87,6 +87,10 @@ nav li {
     margin-right: 30px;
 }
 
+[src="img/logo.png"] {
+    padding-right: 55px;
+}
+
 nav ul {
     list-style-type: none;
     display: flex;
@@ -624,7 +628,7 @@ nav ul {
 /*sing up*/
 
 .form {
-    background-image: linear-gradient(90deg, #fff 0%, #fff 2%, #1d1f2e 2%, #1d1f2e 98%, #fff 98%, #fff 100%);
+    background-color:#1d1f2e;
     padding-top: 80px;
     padding-bottom: 85px;
 }
@@ -897,18 +901,21 @@ ul {
     display: flex;
 }
 
-@media screen and (max-width: 990px) /*and (min-width:768px)*/ {
-    body{
-        overflow-x:hidden;
+@media screen and (max-width: 990px) and (min-width:768px) {
+    body {
+        overflow-x: hidden;
+        text-align:center;
     }
+
     nav {
         padding: 0 20px;
 
     }
 
     nav ul {
+        display: none;
         position: absolute;
-        display:none;
+        
         width: 100%;
         top: 55px;
         left: 0;
@@ -942,34 +949,200 @@ ul {
 
 
     }
-    .header-background{
-        width:100vw;
-        background-position:center;
-        background-origin:border-box;
+
+    .header-background {
+        width: 100vw;
+        background-position: center;
+        background-origin: border-box;
         background-size: cover;
-        min-width:100vw;
-        max-width:100vw;
+        min-width: 100vw;
+        max-width: 100vw;
     }
-.line-1,.line-2,.line-3{
-    flex-wrap:wrap;
-    flex-direction:row;
-    justify-content:center;
+
+    .line-1,
+    .line-2,
+    .line-3 {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    [class*="common"] img {
+        max-width: 300px;
+        height: auto;
+    }
+
+    .outer-flex {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+
+    .lifestyle-inner {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-container {
+        margin-left: 20px;
+    }
+
 }
-[class*="common"] img {
-    max-width: 300px;
-    height: auto;
-}
-.outer-flex{
-    flex-direction:column;
-    align-items:center;
-    row-gap:20px;
-}
-.lifestyle-inner{
-    flex-wrap:wrap;
-    justify-content: center;
-}
-.footer-container{
-    margin-left: 20px;
-}
+
+@media screen and (max-width:767px) {
+    body {
+        overflow-x: hidden;
+        text-align:center;
+    }
+
+    nav {
+        padding: 0 20px;
+
+    }
+
+    .content-wrap {
+        margin: 0 20px;
+        margin-bottom: 110px;
+    }
+
+    nav ul {
+        position: absolute;
+        display: none;
+        width: 100%;
+        top: 55px;
+        left: 0;
+        text-align: center;
+        background-color: white;
+        flex-direction: column;
+
+    }
+
+    nav ul li {
+        padding-bottom: 30px;
+    }
+
+    .tablet-menu {
+        display: block;
+        padding-left: 40px;
+
+
+
+    }
+
+    .container {
+        width: 100vw;
+        box-sizing: border-box;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .cart {
+        margin-left: auto;
+
+
+    }
+
+    .header-background {
+        width: 100vw;
+        background-position: center;
+        background-origin: border-box;
+        background-size: cover;
+        min-width: 100vw;
+        max-width: 100vw;
+    }
+
+    .feature-mugs div .flex-wrapper {
+        flex-direction: column;
+        height: auto;
+    }
+
+    [src="img/logo.png"] {
+        margin-right: 0;
+        padding-right: 5px;
+    }
+
+    .more_products--title {
+        margin-bottom: 50px;
+        margin-top: 20px;
+    }
+
+    [class*="-big"] img {
+        max-width: 100%;
+        height: auto;
+
+    }
+
+   
+    [class*="mug--standard"],[class*="mug--onsale"]{
+        margin-top: 20px;
+    }
+    .line-1,
+    .line-2,
+    .line-3 {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 0;
+        
+    }
+    .img-flex {
+        display: grid;
+        grid-template-areas:
+            'bi bi'
+            'bi bi'
+            'ssi fsi';
+        gap: 20px;
+    }
+    .big-image{
+        width:100%;
+        height:auto;
+    }
+
+    [class*="common"] img {
+        max-width: 300px;
+        height: auto;
+    }
+
+    .outer-flex {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 60px;
+    }
+    .premium--title{
+        margin-bottom: 20px;
+    }
+    .lifestyle-item{
+        width:100%;
+    }
+    .lifestyle-inner {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .form-flex{
+    
+        flex-direction:column;
+        width:80%;
+        margin-left:10%;
+        margin-right:10%;
+        row-gap:10px;
+    }
+    .input{
+        width:auto;
+    }
+
+    .subscribe-button{
+        margin:0;
+        width:100%;
+        
+    }
+    .lifestyle-image{
+        width:100%;
+        height:100%;
+
+    }
+    
+    .footer-container {
+        margin-left: 20px;
+    }
 
 }
