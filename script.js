@@ -18,4 +18,7 @@ $(document).ready(function(){
         $(".sidebar-wrapper").show(400);
 
     });
-  });
+    $(".tablet-menu").click(function(){
+        $("nav ul").slideToggle(400);
+    });
+});
