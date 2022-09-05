@@ -1025,7 +1025,10 @@ ul {
 nav ul li {
     padding-bottom: 0;
 }
-
+nav img,
+nav li {
+    margin-right:0px;
+}
     nav {
         padding: 0 20px;
 
